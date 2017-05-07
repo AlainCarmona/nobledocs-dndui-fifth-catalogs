@@ -1,0 +1,373 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" 
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+    <head lang="en">
+        <!-- Theme Made By www.w3schools.com - No Copyright -->
+        <title>Bootstrap Theme The Band</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}" />
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css" />
+        <script th:src="@{/js/bootstrap.js}"></script>
+        <script th:src="@{/js/jquery.js}"></script>
+        <link rel="stylesheet" th:href="@{/css/catalogs.css}" />
+    </head>
+    <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>                        
+                    </button>
+                    <a class="navbar-brand" href="/">Dungeons &AMP; Dragons</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="/races">RACES</a></li>
+                        <li><a href="/classes">CLASSES</a></li>
+                        <li><a href="/backgrounds">BACKGROUNDS</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Container (The Band Section) -->
+        <div id="band" class="container">
+            <div class="col-sm-3">
+                <ul class="nav nav-pills nav-stacked">
+                    <li class="active"><a data-toggle="tab" href="#barbarian">BARBARIAN</a></li>
+                    <li><a data-toggle="tab" href="#bard">BARD</a></li>
+                    <li><a data-toggle="tab" href="#cleric">CLERIC</a></li>
+                    <li><a data-toggle="tab" href="#druid">DRUID</a></li>
+                    <li><a data-toggle="tab" href="#fighter">FIGHTER</a></li>
+                    <li><a data-toggle="tab" href="#monk">MONK</a></li>
+                    <li><a data-toggle="tab" href="#paladin">PALADIN</a></li>
+                    <li><a data-toggle="tab" href="#ranger">RANGER</a></li>
+                    <li><a data-toggle="tab" href="#rogue">ROGUE</a></li>
+                    <li><a data-toggle="tab" href="#sorcerer">SORCERER</a></li>
+                    <li><a data-toggle="tab" href="#warlock">WARLOCK</a></li>
+                    <li><a data-toggle="tab" href="#wizard">WIZARD</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-9">
+                <div class="tab-content">
+                    <div id="barbarian" class="tab-pane fade in active text-justify">
+                        <h4>BARBARIAN</h4>
+                        <h3>QUICK BUILD</h3>
+                        <p>You can make a barbarian quickly by following these suggestions. First, put your highest ability score in Strength, followed by Constitution. Second, choose the outlander background.</p>
+                        <h3>CLASS FEATURES</h3>
+                        <p>As a barbarian, you gain the following class features.</p>
+                        <h3>HIT POINTS</h3>
+                        <p><strong>Hit Dice:</strong> 1d12 per barbarian level<br/>
+                            <strong>Hit Points at 1st Level:</strong> 12 + your Constitution modifier<br/>
+                            <strong>Hit Points at Higher Levels:</strong> 1d12 (or 7) + your Constitution modifier per barbarian level after 1st</p>
+                        <h3>PROFICIENCIES</h3>
+                        <p><strong>Armor:</strong> Light armor, medium armor, shields<br/>
+                            <strong>Weapons:</strong> Simple weapons, martial weapons<br/>
+                            <strong>Tools:</strong> None<br/>
+                            <strong>Saving Throws:</strong> Strength, Constitution<br/>
+                            <strong>Skills:</strong> Choose two from Animal Handling, Athletics, Intimidation, Nature, Perception, and Survival</p>
+                        <h3>EQUIPMENT</h3>
+                        <p>You start with the following equipment, in addition to the equipment granted by your background:
+                            <ul>
+                                <li>(a) a greataxe or (b) any martial melee weapon</li>
+                                <li>(a) two handaxes or (b) any simple weapon</li>
+                                <li>An explorer's pack and four javelins</li>
+                            </ul>
+                        </p>
+                    </div>
+                    <div id="bard" class="tab-pane fade text-justify">
+                        <h4>BARD</h4>
+                        <h3>QUICK BUILD</h3>
+                        <p>You can make a bard quickly by following these suggestions. First, Charisma should be your highest ability score, followed by Dexterity. Second, choose the entertainer background. Third, choose the dancing lights and vicious mockery cantrips, along with the following 1st-level spells: charm person, detect magic, healing word, and thunderwave.</p>
+                        <h3>CLASS FEATURES</h3>
+                        <p>As a bard, you gain the following class features.</p>
+                        <h3>HIT POINTS</h3>
+                        <p><strong>Hit Dice:</strong> 1d8 per bard level<br/>
+                            <strong>Hit Points at 1st Level:</strong>Hit 8 + your Constitution modifier<br/>
+                            <strong>Hit Points at Higher Levels:</strong> 1d8 (or 5) + your Constitution modifier per bard level after 1st</p>
+                        <h3>PROFICIENCIES</h3>
+                        <p><strong>Armor:</strong> Light armor<br/>
+                            <strong>Weapons:</strong> Simple weapons, hand crossbows, longswords, rapiers, shortswords<br/>
+                            <strong>Tools:</strong> Three musical instruments of your choice<br/>
+                            <strong>Saving Throws:</strong> Dexterity, Charisma<br/>
+                            <strong>Skills:</strong> Choose any three</p>
+                        <h3>EQUIPMENT</h3>
+                        <p>You start with the following equipment, in addition to the equipment granted by your background:
+                            <ul>
+                                <li>(a) a rapier, (b) a longsword, or (c) any simple weapon</li>
+                                <li>(a) a diplomat's pack or (b) an entertainer's pack</li>
+                                <li>(a) a lute or (b) any other musical instrument</li>
+                                <li>Leather armor and a dagger</li>
+                            </ul>
+                        </p>
+                    </div>
+                    <div id="cleric" class="tab-pane fade text-justify">
+                        <h4>CLERIC</h4>
+                        <h3>QUICK BUILD</h3>
+                        <p>You can make a cleric quickly by following these suggestions. First, Wisdom should be your highest ability score, followed by Strength or Constitution. Second, choose the acolyte background.</p>
+                        <h3>CLASS FEATURES</h3>
+                        <p>As a cleric, you gain the following class features.</p>
+                        <h3>HIT POINTS</h3>
+                        <p><strong>Hit Dice:</strong> 1d8 per cleric level<br/>
+                            <strong>Hit Points at 1st Level:</strong> 8 + your Constitution modifier<br/>
+                            <strong>Hit Points at Higher Levels:</strong> 1d8 (or 5) + your Constitution modifier per cleric level after 1st</p>
+                        <h3>PROFICIENCIES</h3>
+                        <p><strong>Armor:</strong> Light armor, medium armor, shields<br/>
+                            <strong>Weapons:</strong> All simple weapons<br/>
+                            <strong>Tools:</strong> None<br/>
+                            <strong>Saving Throws:</strong> Wisdom, Charisma<br/>
+                            <strong>Skills:</strong> Choose two from History, Insight, Medicine, Persuasion, and Religion</p>
+                        <h3>EQUIPMENT</h3>
+                        <p>You start with the following equipment, in addition to the equipment granted by your background:
+                            <ul>
+                                <li>(a) a mace or (b) a warhammer (if proficient)</li>
+                                <li>(a) scale mail, (b) leather armor, or (c) chain mail (if proficient)</li>
+                                <li>(a) a light crossbow and 20 bolts or (b) any simple weapon</li>
+                                <li>(a) a priest's pack or (b) an explorer's pack</li>
+                                <li>A shield and a holy symbol</li>
+                            </ul>
+                        </p>
+                    </div>
+                    <div id="druid" class="tab-pane fade text-justify">
+                        <h4>DRUID</h4>
+                        <h3>QUICK BUILD</h3>
+                        <p>You can make a druid quickly by following these suggestions. First, Wisdom should be your highest ability score, followed by Constitution. Second, choose the hermit background.</p>
+                        <h3>CLASS FEATURES</h3>
+                        <p>As a druid, you gain the following class features.</p>
+                        <h3>HIT POINTS</h3>
+                        <p><strong>Hit Dice:</strong> Id8 per druid level<br/>
+                            <strong>Hit Points at 1st Level:</strong> 8 + your Constitution modifier<br/>
+                            <strong>Hit Points at Higher Levels:</strong> 1d8 (or 5) + your Constitution modifier per druid level after 1st</p>
+                            <h3>PROFICIENCIES</h3>
+                            <p><strong>Armor:</strong> Light armor, medium armor, shields (druids will not wear armor or use shields made of metal)<br/>
+                                <strong>Weapons:</strong> Clubs, daggers, darts, javelins, maces, quarterstaffs, scimitars, sickles, slings, spears<br/>
+                                <strong>Tools:</strong> Herbalism kit<br/>
+                                <strong>Saving Throws:</strong> Intelligence, Wisdom<br/>
+                                <strong>Skills:</strong> Choose two from Arcana, Animal Handling, Insight, Medicine, Nature, Perception, Religion, and Survival</p>
+                            <h3>EQUIPMENT</h3>
+                            <p>You start with the following equipment, in addition to the equipment granted by your background:
+                                <ul>
+                                    <li>(a) a wooden shield or (b) any simple weapon</li>
+                                    <li>(a) a scimitar or (b) any simple melee weapon</li>
+                                    <li>Leather armor, an explorer's pack, and a druidic focus</li>
+                                </ul>
+                            </p>
+                    </div>
+                    <div id="fighter" class="tab-pane fade text-justify">
+                        <h4>FIGHTER</h4>
+                        <h3>QUICK BUILD</h3>
+                        <p>You can make a fighter quickly by following these suggestions. First, make Strength or Dexterity your highest ability score, depending on whether you want to focus on melee weapons or on archery (or finesse weapons). Your next-highest score should be Constitution, or Intelligence if you plan to adopt the Eldritch Knight martial archetype. Second, choose the soldier background.</p>
+                        <h3>CLASS FEATURES</h3>
+                        <p>As a fighter, you gain the following class features.</p>
+                        <h3>HIT POINTS</h3>
+                        <p><strong>Hit Dice:</strong> 1d10 per fighter level<br/>
+                            <strong>Hit Points at 1st Level:</strong> 10 + your Constitution modifier<br/>
+                            <strong>Hit Points at Higher Levels:</strong> 1d10 (or 6) + your Constitution modifier per fighter level after 1st</p>
+                        <h3>PROFICIENCIES</h3>
+                        <p><strong>Armor:</strong> All armor, shields<br/>
+                            <strong>Weapons:</strong> Simple weapons, martial weapons<br/>
+                            <strong>Tools:</strong> None<br/>
+                            <strong>Saving Throws:</strong> Strength, Constitution<br/>
+                            <strong>Skills:</strong> Choose two skills from Acrobatics, Animal Handling, Athletics, History, Insight, Intimidation, Perception, and Survival</p>
+                        <h3>EQUIPMENT</h3>
+                        <p>You start with the following equipment, in addition to the equipment granted by your background:
+                            <ul>
+                                <li>(a) chain mail or (b) leather, longbow, and 20 arrows</li>
+                                <li>(a) a martial weapon and a shield or (b) two martial weapons</li>
+                                <li>(a) a light crossbow and 20 bolts or (b) two handaxes</li>
+                                <li>(a) a dungeoneer's pack or (b) an explorer's pack</li>
+                            </ul>
+                        </p>
+                    </div>
+                    <div id="monk" class="tab-pane fade text-justify">
+                        <h4>MONK</h4>
+                        <h3>QUICK BUILD</h3>
+                        <p>You can make a monk quickly by following these suggestions. First, make Dexterity your highest ability score, followed by Wisdom. Second, choose the hermit background.</p>
+                        <h3>CLASS FEATURES</h3>
+                        <p>As a monk, you gain the following class features.</p>
+                        <h3>HIT POINTS</h3>
+                        <p><strong>Hit Dice:</strong> 1d8 per monk level<br/>
+                            <strong>Hit Points at 1st Level:</strong> 8 + your Constitution modifier<br/>
+                            <strong>Hit Points at Higher Levels:</strong> 1d8 (or 5) + your Constitution modifier per monk level after 1st</p>
+                        <h3>PROFICIENCIES</h3>
+                        <p><strong>Armor:</strong> None<br/>
+                            <strong>Weapons:</strong> Simple weapons, shortswords<br/>
+                            <strong>Tools:</strong> Choose one type of artisan's tools or one musical instrument<br/>
+                            <strong>Saving Throws:</strong> Strength, Dexterity<br/>
+                            <strong>Skills:</strong> Choose two from Acrobatics, Athletics, History, Insight, Religion, and Stealth</p>
+                        <h3>EQUIPMENT</h3>
+                        <p>You start with the following equipment, in addition to the equipment granted by your background:
+                            <ul>
+                                <li>(a) a shortsword or (b) any simple weapon</li>
+                                <li>(a) a dungeoneer's pack or (b) an explorer's pack</li>
+                                <li>10 darts</li>
+                            </ul>
+                        </p>
+                    </div>
+                    <div id="paladin" class="tab-pane fade text-justify">
+                        <h4>PALADIN</h4>
+                        <h3>QUICK BUILD</h3>
+                        <p>You can make a paladin quickly by following these suggestions. First, Strength should be your highest ability score, followed by Charisma. Second, choose the noble background.</p>
+                        <h3>CLASS FEATURES</h3>
+                        <p>As a paladin, you gain the following class features.</p>
+                        <h3>HIT POINTS</h3>
+                        <p><strong>Hit Dice:</strong> 1d10 per paladin level<br/>
+                            <strong>Hit Points at 1st Level:</strong> 10 + your Constitution modifier<br/>
+                            <strong>Hit Points at Higher Levels:</strong> 1d10 (or 6) + your Constitution modifier per paladin level after 1st</p>
+                        <h3>PROFICIENCIES</h3>
+                        <p><strong>Armor:</strong> All armor, shields<br/>
+                            <strong>Weapons:</strong> Simple weapons, martial weapons<br/>
+                            <strong>Tools:</strong> None<br/>
+                            <strong>Saving Throws:</strong> Wisdom, Charisma<br/>
+                            <strong>Skills:</strong> Choose two from Athletics, Insight, Intimidation, Medicine, Persuasion, and Religion</p>
+                        <h3>EQUIPMENT</h3>
+                        <p>You start with the following equipment, in addition to the equipment granted by your background:
+                            <ul>
+                                <li>(a) a martial weapon and a shield or (b) two martial weapons</li>
+                                <li>(a) five javelins or (b) any simple melee weapon</li>
+                                <li>(a) a priest's pack or (b) an explorer's pack</li>
+                                <li>Chain mail and a holy symbol</li>
+                            </ul>
+                        </p>
+                    </div>
+                    <div id="ranger" class="tab-pane fade text-justify">
+                        <h4>RANGER</h4>
+                        <h3>QUICK BUILD</h3>
+                        <p>You can make a ranger quickly by following these suggestions. First, make Dexterity your highest ability score, followed by Wisdom. (Some rangers who focus on two-weapon fighting make Strength higher than Dexterity.) Second, choose the outlander background.</p>
+                        <h3>CLASS FEATURES</h3>
+                        <p>As a ranger, you gain the following class features.</p>
+                        <h3>HIT POINTS</h3>
+                        <p><strong>Hit Dice:</strong> 1d10 per ranger level<br/>
+                            <strong>Hit Points at 1st Level:</strong> 10 + your Constitution modifier<br/>
+                            <strong>Hit Points at Higher Levels:</strong> 1d10 (or 6) + your Constitution modifier per ranger level after 1st</p>
+                        <h3>PROFICIENCIES</h3>
+                        <p><strong>Armor:</strong> Light armor, medium armor, shields<br/>
+                            <strong>Weapons:</strong> Simple weapons, martial weapons<br/>
+                            <strong>Tools:</strong> None<br/>
+                            <strong>Saving Throws:</strong> Strength, Dexterity<br/>
+                            <strong>Skills:</strong> Choose three from Animal Handling, Athletics, Insight, Investigation, Nature, Perception, Stealth, and Survival</p>
+                        <h3>EQUIPMENT</h3>
+                        <p>You start with the following equipment, in addition to the equipment granted by your background:
+                            <ul>
+                                <li>(a) scale mail or (b) leather armor</li>
+                                <li>(a) two shortswords or (b) two sim pie melee weapons</li>
+                                <li>(a) a dungeoneer's pack or (b) an explorer's pack</li>
+                                <li>A longbow and a quiver of 20 arrows</li>
+                            </ul>
+                        </p>
+                    </div>
+                    <div id="rogue" class="tab-pane fade text-justify">
+                        <h4>ROGUE</h4>
+                        <h3>QUICK BUILD</h3>
+                        <p>You can make a rogue quickly by following these suggestions. First. Dexterity should be your highest ability score. Make Intelligence your next-highest if you want to excel at Investigation or plan to take up the Arcane Trickster archetype. Choose Charisma instead if you plan to emphasize deception and social interaction. Second, choose the charlatan background.</p>
+                        <h3>CLASS FEATURES</h3>
+                        <p>As a rogue, you have the following class features.</p>
+                        <h3>HIT POINTS</h3>
+                        <p><strong>Hit Dice:</strong> 1d8 per rogue level<br/>
+                            <strong>Hit Points at 1st Level:</strong> 8 + your Constitution modifier<br/>
+                            <strong>Hit Points at Higher Levels:</strong> 1d8 (or 5) + your Constitution modifier per rogue level after 1st</p>
+                        <h3>PROFICIENCIES</h3>
+                        <p><strong>Armor:</strong> Light armor<br/>
+                            <strong>Weapons:</strong> Simple weapons, hand crossbows, longswords, rapiers, shortswords<br/>
+                            <strong>Tools:</strong> Thieves' tools<br/>
+                            <strong>Saving Throws:</strong> Dexterity, Intelligence<br/>
+                            <strong>Skills:</strong> Choose four from Acrobatics, Athletics, Deception, Insight, Intimidation, Investigation, Perception, Performance, Persuasion, Sleight of Hand, and Stealth</p>
+                        <h3>EQUIPMENT</h3>
+                        <p>You start with the following equipment, in addition to the equipment granted by your background:
+                            <ul>
+                                <li>(a) a rapier or (b) a shortsword</li>
+                                <li>(a) a shortbow and quiver of 20 arrows or (b) a shortsword</li>
+                                <li>(a) a burglar's pack, (b) a dungeoneer's pack, or (c) an explorer's pack</li>
+                                <li>Leather armor, two daggers, and thieves' tools</li>
+                            </ul>
+                        </p>
+                    </div>
+                    <div id="sorcerer" class="tab-pane fade text-justify">
+                        <h4>SORCERER</h4>
+                        <h3>QUICK BUILD</h3>
+                        <p>You can make a sorcerer quickly by following these suggestions. First, Charisma should be your highest ability score, followed by Constitution. Second, choose the hermit background. Third, choose the light, prestidigitation, ray of frost, and shocking grasp cantrips, along with the 1st-level spells shield and magic missile.</p>
+                        <h3>CLASS FEATURES</h3>
+                        <p>As a sorcerer, you gain the following class features.</p>
+                        <h3>HIT POINTS</h3>
+                        <p><strong>Hit Dice:</strong> 1d6 per sorcerer level<br/>
+                            <strong>Hit Points at 1st Level:</strong> 6 + your Constitution modifier<br/>
+                            <strong>Hit Points at Higher Levels:</strong> 1d6 (or 4) + your Constitution modifier per sorcerer level after 1st</p>
+                        <h3>PROFICIENCIES</h3>
+                        <p><strong>Armor:</strong> None<br/>
+                            <strong>Weapons:</strong> Daggers, darts, slings, quarterstaffs, light crossbows<br/>
+                            <strong>Tools:</strong> None<br/>
+                            <strong>Saving Throws:</strong> Constitution, Charisma<br/>
+                            <strong>Skills:</strong> Choose two from Arcana, Deception, Insight, Intimidation, Persuasion, and Religion</p>
+                        <h3>EQUIPMENT</h3>
+                        <p>You start with the following equipment, in addition to the equipment granted by your background:
+                            <ul>
+                                <li>(a) a light crossbow and 20 bolts or (b) any simple weapon</li>
+                                <li>(a) a component pouch or (b) an arcane focus</li>
+                                <li>(a) a dungeoneer's pack or (b) an explorer's pack</li>
+                                <li>Two daggers</li>
+                            </ul>
+                        </p>
+                    </div>
+                    <div id="warlock" class="tab-pane fade text-justify">
+                        <h4>WARLOCK</h4>
+                        <h3>QUICK BUILD</h3>
+                        <p>You can make a warlock quickly by following these suggestions. First. Charisma should be your highest ability score, followed by Constitution. Second, choose the charlatan background. Third. choose the eldritch blast and chill touch cantrips, along with the 1st-level spells ray of sickness and witch bolt.</p>
+                        <h3>CLASS FEATURES</h3>
+                        <p>As a warlock, you gain the following class features.</p>
+                        <h3>HIT POINTS</h3>
+                        <p><strong>Hit Dice:</strong> 1d8 per warlock level<br/>
+                            <strong>Hit Points at 1st Level:</strong> 8 + your Constitution modifier<br/>
+                            <strong>Hit Points at Higher Levels:</strong> 1d8 (or 5) + your Constitution modifier per warlock level after 1st</p>
+                        <h3>PROFICIENCIES</h3>
+                        <p><strong>Armor:</strong> Light armor<br/>
+                            <strong>Weapons:</strong> Simple weapons<br/>
+                            <strong>Tools:</strong> None<br/>
+                            <strong>Saving Throws:</strong> Wisdom, Charisma<br/>
+                            <strong>Skills:</strong> Choose two skills from Arcana, Deception, History, Intimidation, Investigation, Nature, and Religion</p>
+                        <h3>EQUIPMENT</h3>
+                        <p>You start with the following equipment, in addition to the equipment granted by your background:
+                            <ul>
+                                <li>(a) a light crossbow and 20 bolts or (b) any simple weapon</li>
+                                <li>(a) a component pouch or (b) an arcane focus</li>
+                                <li>(a) a scholar's pack or (b) a dungeoneer's pack</li>
+                                <li>Leather armor, any simple weapon, and two daggers</li>
+                            </ul>
+                        </p>
+                    </div>
+                    <div id="wizard" class="tab-pane fade text-justify">
+                        <h4>WIZARD</h4>
+                        <h3>QUICK BUILD</h3>
+                        <p>You can make a wizard quickly by following these suggestions. First, Intelligence should be your highest ability score, followed by Constitution or Dexterity. If you plan to join the School of Enchantment, make Charisma your next-best score. Second, choose the sage background. Third, choose the mage hand, light, and ray of frost cantrips, along with the fallowing 1st-level spells for your spellbook: burning hands, charm person, feather fall, mage armor, magic missile, and sleep.</p>
+                        <h3>CLASS FEATURES</h3>
+                        <p>As a wizard, you gain the following class features.</p>
+                        <h3>HIT POINTS</h3>
+                        <p><strong>Hit Dice:</strong> 1d6 per wizard level<br/>
+                            <strong>Hit Points at 1st Level:</strong> 6 + your Constitution modifier<br/>
+                            <strong>Hit Points at Higher Levels:</strong> 1d6 (or 4) + your Constitution modifier per wizard level after 1st</p>
+                        <h3>PROFICIENCIES</h3>
+                        <p><strong>Armor:</strong> None<br/>
+                            <strong>Weapons:</strong> Daggers, darts, slings, quarterstaffs, light crossbows<br/>
+                            <strong>Tools:</strong> None<br/>
+                            <strong>Saving Throws:</strong> Intelligence, Wisdom<br/>
+                            <strong>Skills:</strong> Choose two from Arcana, History, Insight, Investigation, Medicine, and Religion</p>
+                        <h3>EQUIPMENT</h3>
+                        <p>You start with the following equipment, in addition to the equipment granted by your background:
+                            <ul>
+                                <li>(a) a quarterstaff or (b) a dagger</li>
+                                <li>(a) a component pouch or (b) an arcane focus</li>
+                                <li>(a) a scholar's pack or (b) an explorer's pack</li>
+                                <li>A spellbook</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+
+
