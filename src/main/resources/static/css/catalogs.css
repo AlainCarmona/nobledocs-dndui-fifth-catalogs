@@ -5,7 +5,7 @@
 
 body {
     font: 400 15px/1.8 Lato, sans-serif;
-    color: #777;
+    color: #777; 
 }
 h3, h4 {
     letter-spacing: 10px;      
@@ -84,3 +84,12 @@ footer a:hover {
 .form-control {
     border-radius: 0;
 }
+.modal-header, h4, .close {
+      background-color: #333;
+      color: #fff !important;
+      text-align: center;
+      font-size: 30px;
+  }
+  .modal-header, .modal-body {
+      padding: 40px 50px;
+  }
