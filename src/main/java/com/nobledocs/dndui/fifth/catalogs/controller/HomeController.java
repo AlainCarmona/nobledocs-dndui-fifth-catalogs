@@ -5,9 +5,7 @@
  */
 package com.nobledocs.dndui.fifth.catalogs.controller;
 
-import java.util.Map;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 /**
@@ -24,17 +22,57 @@ public class HomeController {
 
     @RequestMapping("/races")
     public String races() {
-        return "races";
+        return "catalogs/races";
     }
 
     @RequestMapping("/classes")
     public String classes() {
-        return "classes";
+        return "catalogs/classes";
     }
 
     @RequestMapping("/backgrounds")
     public String backgrounds() {
-        return "backgrounds";
+        return "catalogs/backgrounds";
+    }
+
+    @RequestMapping("/spells/bard")
+    public String bardSpells() {
+        return "spells/bard-spells";
+    }
+
+    @RequestMapping("/spells/cleric")
+    public String clericSpells() {
+        return "spells/cleric-spells";
+    }
+
+    @RequestMapping("/spells/druid")
+    public String druidSpells() {
+        return "spells/druid-spells";
+    }
+
+    @RequestMapping("/spells/paladin")
+    public String paladinSpells() {
+        return "spells/paladin-spells";
+    }
+
+    @RequestMapping("/spells/ranger")
+    public String rangerSpells() {
+        return "spells/ranger-spells";
+    }
+
+    @RequestMapping("/spells/sorcerer")
+    public String sorcererSpells() {
+        return "spells/sorcerer-spells";
+    }
+
+    @RequestMapping("/spells/warlock")
+    public String warlockSpells() {
+        return "spells/warlock-spells";
+    }
+
+    @RequestMapping("/spells/wizard")
+    public String wizardSpells() {
+        return "spells/wizard-spells";
     }
 
 }

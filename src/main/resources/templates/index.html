@@ -6,11 +6,11 @@
         <title>Dungeons &AMP; Dragons 5th</title>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+        <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}" />
+        <script th:src="@{/js/jquery.js}"></script>
+        <script th:src="@{/js/bootstrap.js}"></script>
         <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css" />
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <style>
             body {
                 font: 400 15px/1.8 Lato, sans-serif;
@@ -146,6 +146,15 @@
                         <li><a href="#choose-a-race">CHOOSE A RACE</a></li>
                         <li><a href="#choose-a-class">CHOOSE A CLASS</a></li>
                         <li><a href="#choose-a-background">CHOOSE A BACKGROUND</a></li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">CATALOGS
+                                <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/races">Races</a></li>
+                                <li><a href="/classes">Classes</a></li>
+                                <li><a href="/backgrounds">Backgrounds</a></li> 
+                            </ul>
+                        </li>
                     </ul>
                 </div>
             </div>
